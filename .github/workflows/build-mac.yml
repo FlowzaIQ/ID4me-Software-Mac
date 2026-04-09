@@ -3,6 +3,9 @@ name: Build Mac
 on:
   workflow_dispatch:  # lets you trigger it manually from GitHub
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: macos-latest
